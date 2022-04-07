@@ -1,1 +1,1 @@
-Testing file
+Created a template for future use
