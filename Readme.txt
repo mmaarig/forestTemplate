@@ -1,1 +1,1 @@
-Created a template for future use
+Created a template for future use.
