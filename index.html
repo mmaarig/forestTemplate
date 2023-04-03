@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
     <link rel="stylesheet" href="./index.css">
     <title>My Web</title>
 </head>
+
 <body>
+    <div class="alan-btn"></div>
+
     <div class="banner">
         <div class="navbar">
             <img src="./img/logo.png" class="logo" alt="logo">
@@ -32,5 +36,18 @@
         </div>
 
     </div>
+    <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+    <script>
+        var alanBtnInstance = alanBtn({
+            key: "768f6be0d207f13312ef6a872db535112e956eca572e1d8b807a3e2338fdd0dc/stage",
+            onCommand: function (commandData) {
+                if (commandData.command === "go:back") {
+                    //call client code that will react on the received command
+                }
+            },
+            rootEl: document.getElementById("alan-btn"),
+        });
+    </script>
 </body>
+
 </html>
